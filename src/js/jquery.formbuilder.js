@@ -338,7 +338,7 @@
 					field += '</div>';
 					field += '</div>';
 					help = '';
-					appendFieldLi(opts.messages.select, field, required, help);
+					appendFieldLi(opts.field_types.select.label, field, required, help);
 
 					$('.'+ opts.css_ol_sortable_class).sortable(); // making the dynamically added option fields sortable.
 				};
