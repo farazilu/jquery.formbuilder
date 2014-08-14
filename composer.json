@@ -2,7 +2,7 @@
 	"name": "farazilu/jquery.formbuilder",
 	    "type": "library",
 	    "description": "Jquery Form Builder",
-	    "keywords": ["Jquery","Form", "builder"],
+	    "keywords": ["Jquery","Form", "builder", "formbuilder"],
 	    "homepage": "https://github.com/farazilu/jquery.formbuilder",
 	    "license": "MIT",
 	    "authors": [
