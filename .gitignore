@@ -4,3 +4,4 @@ node_modules
 nbproject
 .ftpssh_settings
 .idea
+/.project
