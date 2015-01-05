@@ -73,8 +73,8 @@
 	    var ul_obj = $(this).append('<ul id="' + frmb_id + '" class="frmb"></ul>').find('ul').sortable();
 	    var field = '', field_type = '', last_id = 1, help, form_db_id;
 
-			// Add a unique class to the current element
-			ul_obj.addClass(frmb_id);
+	    // Add a unique class to the current element
+	    ul_obj.addClass(frmb_id);
 	    // Create form control select box and add into the editor
 	    var setupControlBox = function(target) {
 		var select = '';
@@ -115,17 +115,17 @@
 		    return false;
 		});
 	    };
-			// load existing form data
-			if (opts.load_url) {
-				$.getJSON(opts.load_url, function(json) {
-					form_db_id = json.form_id;
-					fromJson(json.form_structure);
-					opts.loaded(json);
-					var controlBox = setupControlBox(opts.control_box_target);
-				});
-			} else {
-				var controlBox = setupControlBox(opts.control_box_target);
-			}
+	    // load existing form data
+	    if (opts.load_url) {
+		$.getJSON(opts.load_url, function(json) {
+		    form_db_id = json.form_id;
+		    fromJson(json.form_structure);
+		    opts.loaded(json);
+		    var controlBox = setupControlBox(opts.control_box_target);
+		});
+	    } else {
+		var controlBox = setupControlBox(opts.control_box_target);
+	    }
 	    // Json parser to build the form builder
 	    var fromJson = function(json) {
 		var values = '';
@@ -255,7 +255,11 @@
 		help = '';
 		appendFieldLi(opts.messages.checkbox_group, field, required, help);
 
-					$('.'+ opts.css_ol_sortable_class).sortable(); // making the dynamically added option fields sortable.
+		$('.' + opts.css_ol_sortable_class).sortable(); // making the
+								// dynamically
+								// added option
+								// fields
+								// sortable.
 	    };
 	    // Checkbox field html, since there may be multiple
 	    var checkboxFieldHtml = function(values) {
@@ -302,7 +306,11 @@
 		help = '';
 		appendFieldLi(opts.messages.radio_group, field, required, help);
 
-					$('.'+ opts.css_ol_sortable_class).sortable(); // making the dynamically added option fields sortable.
+		$('.' + opts.css_ol_sortable_class).sortable(); // making the
+								// dynamically
+								// added option
+								// fields
+								// sortable.
 	    };
 	    // Radio field html, since there may be multiple
 	    var radioFieldHtml = function(values, name) {
@@ -353,9 +361,13 @@
 		field += '</div>';
 		field += '</div>';
 		help = '';
-					appendFieldLi(opts.messages.select, field, required, help);
+		appendFieldLi(opts.messages.select, field, required, help);
 
-					$('.'+ opts.css_ol_sortable_class).sortable(); // making the dynamically added option fields sortable.
+		$('.' + opts.css_ol_sortable_class).sortable(); // making the
+								// dynamically
+								// added option
+								// fields
+								// sortable.
 	    };
 	    // Select field html, since there may be multiple
 	    var selectFieldHtml = function(values, multiple) {
@@ -467,17 +479,16 @@
 		    });
 		}
 	    };
-		});
+	});
     };
 })(jQuery);
 /**
- * jQuery Form Builder List Serialization Plugin
- * Copyright (c) 2009 Mike Botsko, Botsko.net LLC (http://www.botsko.net)
- * Originally designed for AspenMSM, a CMS product from Trellis Development
- * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
- * Copyright notice and license must remain intact for legal use
- * Modified from the serialize list plugin
- * http://www.botsko.net/blog/2009/01/jquery_serialize_list_plugin/
+ * jQuery Form Builder List Serialization Plugin Copyright (c) 2009 Mike Botsko,
+ * Botsko.net LLC (http://www.botsko.net) Originally designed for AspenMSM, a
+ * CMS product from Trellis Development Licensed under the MIT
+ * (http://www.opensource.org/licenses/mit-license.php) Copyright notice and
+ * license must remain intact for legal use Modified from the serialize list
+ * plugin http://www.botsko.net/blog/2009/01/jquery_serialize_list_plugin/
  */
 (function($) {
     $.fn.serializeFormList = function(options) {

@@ -1,8 +1,11 @@
 /* jquery.formbuilder css */
+.frmb-control {
+	
+}
 
-.frmb-control { }
-
-.frmb-submit { }
+.frmb-submit {
+	
+}
 
 ul.frmb {
 	padding-left: 0px;
@@ -20,7 +23,7 @@ ul.frmb {
 	background: #FFFEEB;
 }
 
-.ui-sortable > li {
+.ui-sortable>li {
 	cursor: move;
 }
 
@@ -56,15 +59,15 @@ ul.frmb {
 	float: left;
 }
 
-.frm-elements .fields input[type=checkbox],
-.frm-elements .fields input[type=radio] {
+.frm-elements .fields input[type=checkbox], .frm-elements .fields input[type=radio] {
 	float: left;
 	margin-right: 10px;
 	margin-left: 0;
 }
 
-.frm-elements .false-label,
-.frm-elements .fields { margin-top: 10px }
+.frm-elements .false-label, .frm-elements .fields {
+	margin-top: 10px
+}
 
 .frm-elements .fields div {
 	overflow: hidden;
@@ -96,8 +99,7 @@ ul.frmb {
 	clear: both;
 }
 
-.frm-elements:after,
-.frm-fld:after {
+.frm-elements:after, .frm-fld:after {
 	content: ".";
 	display: block;
 	height: 0;
@@ -105,11 +107,13 @@ ul.frmb {
 	visibility: hidden;
 }
 
-.frm-elements,
-.frm-fld { display: inline-block }
+.frm-elements, .frm-fld {
+	display: inline-block
+}
 
-.frm-elements,
-.frm-fld { display: block }
+.frm-elements, .frm-fld {
+	display: block
+}
 
 .del-button {
 	float: right;
@@ -117,4 +121,6 @@ ul.frmb {
 }
 
 /* html display helpers */
-textarea, .multi-row span { display: block; }
+textarea, .multi-row span {
+	display: block;
+}
