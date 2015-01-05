@@ -17,7 +17,7 @@
 	    css_ol_sortable_class : 'ol_opt_sortable',
 	    field_types : {
 		input_text : {
-		    label : "Text Field",
+		    label : i18n.t("formbuilder_label_text_field"),
 		    types : {
 			text : "Text",
 			email : "Email",
@@ -26,39 +26,39 @@
 		    }
 		},
 		textarea : {
-		    label : "Paragraph"
+		    label : i18n.t("formbuilder_label_paragraph_field")
 		},
 		file : {
-		    label : "File"
+		    label : i18n.t("formbuilder_label_file_field")
 		},
 		checkbox : {
-		    label : "Checkboxes"
+		    label : i18n.t("formbuilder_label_checkboxes_field")
 		},
 		radio : {
-		    label : "Radio"
+		    label : i18n.t("formbuilder_label_radio_field")
 		},
 		select : {
-		    label : "Select List"
+		    label : i18n.t("formbuilder_label_select_list_field")
 		},
 	    },
 	    messages : {
-		save : "Save",
-		add_new_field : "Add New Field...",
-		title : "Title",
-		text_field : "Text Field",
-		label : "Label",
-		paragraph_field : "Paragraph Field",
-		select_options : "Select Options",
-		add : "Add",
-		checkbox_group : "Checkbox Group",
-		remove_message : "Are you sure you want to remove this element?",
-		remove : "Remove",
-		radio_group : "Radio Group",
-		selections_message : "Allow Multiple Selections",
-		hide : "Hide",
-		required : "Required",
-		show : "Show",
-		file_field : 'File Field',
+		save : i18n.t("formbuilder_message_save"),
+		add_new_field : i18n.t("formbuilder_message_add_new_field"),
+		title : i18n.t("formbuilder_message_title"),
+		text_field : i18n.t("formbuilder_message_text_field"),
+		label : i18n.t("formbuilder_message_label"),
+		paragraph_field : i18n.t("formbuilder_message_paragraph_field"),
+		select_options : i18n.t("formbuilder_message_select_options"),
+		add : i18n.t("formbuilder_message_add"),
+		checkbox_group : i18n.t("formbuilder_message_checkbox_group"),
+		remove_message : i18n.t("formbuilder_message_remove_confirm"),
+		remove : i18n.t("formbuilder_message_remove"),
+		radio_group : i18n.t("formbuilder_message_radio_group"),
+		selections_message : i18n.t("formbuilder_message_allow_multiple_seelctions"),
+		hide : i18n.t("formbuilder_message_hidde"),
+		required : i18n.t("formbuilder_message_required"),
+		show : i18n.t("formbuilder_message_show"),
+		file_field : i18n.t('formbuilder_message_file_field'),
 	    },
 	    loaded : function() {
 	    },
