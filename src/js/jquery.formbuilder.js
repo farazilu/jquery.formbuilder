@@ -115,17 +115,6 @@
 		    return false;
 		});
 	    };
-	    // load existing form data
-	    if (opts.load_url) {
-		$.getJSON(opts.load_url, function(json) {
-		    form_db_id = json.form_id;
-		    fromJson(json.form_structure);
-		    opts.loaded(json);
-		    var controlBox = setupControlBox(opts.control_box_target);
-		});
-	    } else {
-		var controlBox = setupControlBox(opts.control_box_target);
-	    }
 	    // Json parser to build the form builder
 	    var fromJson = function(json) {
 		var values = '';
@@ -412,6 +401,19 @@
 		});
 		return false;
 	    });
+	    
+	    // load existing form data
+	    if (opts.load_url) {
+		$.getJSON(opts.load_url, function(json) {
+		    form_db_id = json.form_id;
+		    fromJson(json.form_structure);
+		    opts.loaded(json);
+		    var controlBox = setupControlBox(opts.control_box_target);
+		});
+	    } else {
+		var controlBox = setupControlBox(opts.control_box_target);
+	    }
+	    
 	    // handle field display/hide
 	    ul_obj.on('click', '.toggle-form', function(event) {
 		event.preventDefault();
