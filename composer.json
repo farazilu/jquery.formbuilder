@@ -1,5 +1,5 @@
 {
-	"name" : "farazilu/jquery.formbuilder",
+	"name" : "farazmunj/jquery.formbuilder",
 	"type" : "library",
 	"description" : "Jquery Form Builder",
 	"keywords" : [
@@ -8,12 +8,12 @@
 		"builder",
 		"formbuilder"
 	],
-	"homepage" : "https://github.com/farazilu/jquery.formbuilder",
+	"homepage" : "https://github.com/farazmunj/jquery.formbuilder",
 	"license" : "MIT",
 	"authors" : [{
 			"name" : "Faraz",
-			"email" : "farazilu@gmail.com",
-			"homepage" : "https://github.com/farazilu",
+			"email" : "farazmunj@gmail.com",
+			"homepage" : "https://github.com/farazmunj",
 			"role" : "Developer"
 		}
 	],
